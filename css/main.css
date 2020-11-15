@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: Poppins, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 html, body {
@@ -18,5 +20,148 @@ body {
 #app {
   width: 100%;
   height: 100%;
+}
+
+#hero {
+  position: relative;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.9))), url("/img/bg.png");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.9)), url("/img/bg.png");
+  width: 100%;
+  min-height: 100vh;
+}
+
+#hero .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+#hero .nav .logo {
+  width: 7%;
+}
+
+#hero .nav .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin: 0 7rem;
+}
+
+#hero .nav .nav-list .nav-item a {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+#hero .nav .nav-list .nav-item + .nav-item {
+  margin-left: 4rem;
+}
+
+#hero .nav .nav-list .nav-button a {
+  font-family: Averta, 'Open Sans', sans-serif;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .15rem;
+  text-transform: uppercase;
+  padding: .7rem 1.5rem;
+  background-color: white;
+  color: #317CAA;
+  border-radius: 120px;
+}
+
+#hero .nav .btn-lang {
+  padding: .5rem 1rem;
+  font-family: Averta, 'Open Sans', sans-serif;
+  font-size: .7rem;
+  font-weight: 700;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  letter-spacing: .03rem;
+}
+
+#hero .nav .btn-lang .icon-down {
+  margin-left: .6rem;
+}
+
+#hero .slogan {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #3286C3;
+  width: 100%;
+  height: 35%;
+  min-height: 200px;
+}
+
+#hero .slogan .content {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -5rem;
+  gap: 3rem;
+}
+
+#hero .slogan .content .phrase {
+  color: white;
+  font-size: 2.5rem;
+  max-width: 500px;
+}
+
+#hero .slogan .content .invite {
+  color: #051339;
+  max-width: 200px;
+  font-family: 'PT Sans', 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+#hero .slogan .content .btn-about {
+  max-width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: .8rem;
+}
+
+#hero .slogan .content .btn-about .icon-forwards {
+  opacity: .4;
 }
 /*# sourceMappingURL=main.css.map */

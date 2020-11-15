@@ -1,0 +1,120 @@
+#hero{
+   position: relative;
+   background-image: 
+      linear-gradient(to top, rgba(black, .3) 50%, rgba(black, .9)),
+      url('/img/bg.png');
+   width: 100%;
+   min-height: 100vh;
+
+   .nav{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 1rem;
+
+      .logo{
+         width: 7%;
+      }
+
+      .nav-list{
+         display: flex;
+         list-style-type: none;
+         margin: 0 7rem;
+
+         .nav-item{
+            a{
+               font-family: 'PT Sans', sans-serif;
+               font-size: 1rem;
+               font-weight: 400;
+               text-decoration: none;
+               color: white;
+            }
+         }
+
+         .nav-item + .nav-item{
+            margin-left: 4rem;
+         }
+
+         .nav-button{
+            a{
+               font-family: Averta, 'Open Sans', sans-serif;
+               font-size: .8rem;
+               font-weight: 700;
+               letter-spacing: .15rem;
+               text-transform: uppercase;
+               padding: .7rem 1.5rem;
+               background-color: white;
+               color: $text-on-white;
+               border-radius: 120px;
+            }
+         }
+      }
+
+      .btn-lang{
+         padding: .5rem 1rem;
+         font-family: Averta, 'Open Sans', sans-serif;
+         font-size: .7rem;
+         font-weight: 700;
+         color: white;
+         background-color: transparent;
+         border: 1px solid white;
+         letter-spacing: .03rem;
+
+         .icon-down{
+            margin-left: .6rem;
+         }
+      }
+   }
+
+   .slogan{
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      background-color: $primary;
+      width: 100%;
+      height: 35%;
+      min-height: 200px;
+
+      .content{
+         max-width: 1200px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top: -5rem;
+         gap: 3rem;
+
+         .phrase{
+            color: white;
+            font-size: 2.5rem;
+            max-width: 500px;
+         }
+   
+         .invite{
+            color: $text-on-blue;
+            max-width: 200px;
+            font-family: 'PT Sans', 'Open Sans', sans-serif;
+            font-size: 1rem;
+         }
+   
+         .btn-about{
+            .icon-forwards{
+               opacity: .4;
+            }
+
+            max-width: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            padding: 2rem;
+            color: white;
+            background-color: rgba(black, .3);
+            border: none;
+            border-radius: .8rem;
+         }
+      }
+   }
+}
