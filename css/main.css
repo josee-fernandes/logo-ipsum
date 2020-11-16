@@ -164,4 +164,75 @@ body {
 #hero .slogan .content .btn-about .icon-forwards {
   opacity: .4;
 }
+
+#main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main-content .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+}
+
+#main-content .projects__item figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  max-width: 415px;
+}
+
+#main-content .projects__item figure .photo {
+  z-index: 1;
+}
+
+#main-content .projects__item figure .desc {
+  z-index: 2;
+}
+
+#main-content .projects__item figure .desc .icon-bg {
+  margin-top: -30px;
+  width: 120px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background-color: #143866;
+  float: left;
+  margin-right: 1rem;
+}
+
+#main-content .projects__item figure .desc .icon-bg .icon {
+  width: 50px;
+  height: 50px;
+}
+
+#main-content .projects__item figure .desc .caption {
+  font-family: 'PT Sans', 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  margin-top: 1rem;
+  color: #6A6A57;
+}
+
+body {
+  background-color: #FAFAF7;
+}
 /*# sourceMappingURL=main.css.map */

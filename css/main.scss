@@ -3,3 +3,8 @@
 @import './reset';
 @import './variables';
 @import './hero';
+@import './main-content';
+
+body{
+   background-color: $light;
+}

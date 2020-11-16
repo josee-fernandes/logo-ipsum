@@ -1,0 +1,52 @@
+#main-content{
+   display: flex;
+   justify-content: center;
+
+   .projects{
+      display: flex;
+      background-color: white;
+
+      &__item{
+         figure{
+            display: flex;
+            flex-direction: column-reverse;
+            max-width: 415px;
+
+            .photo{
+               z-index: 1;
+
+            }
+
+            .desc{
+               z-index: 2;
+
+               .icon-bg{
+                  margin-top: -30px;
+                  width: 120px;
+                  height: 120px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  border-radius: 50%;
+                  background-color: $primary-dark;
+                  float: left;
+                  margin-right: 1rem;
+
+                  .icon{
+                     width: 50px;
+                     height: 50px;
+                  }
+               }
+
+               .caption{
+                  font-family: 'PT Sans', 'Open Sans', sans-serif;
+                  font-size: 1em;
+                  font-weight: 400;
+                  margin-top: 1rem;
+                  color: $light-text;
+               }
+            }
+         }
+      }
+   }
+}
