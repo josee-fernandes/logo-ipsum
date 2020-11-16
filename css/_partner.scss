@@ -1,8 +1,12 @@
 .partner{
-   margin-top: 7rem;
+   width: 100vw;
+   max-width: initial;
+   background-color: #f2f2ee;
+   padding: 3rem;
+   margin-top: 10rem;
    position: relative;
    display: flex;
-   justify-content: space-around;
+   justify-content: space-evenly;
    align-items: center;
 
    &__text{
@@ -47,13 +51,15 @@
    }
 
    &__image{
+      z-index: 1;
+      
       figure{
          position: relative;
 
          .elements{
             position: absolute;
-            margin-left: -50px;
-            z-index: -2;
+            margin-left: -70px;
+            z-index: -1;
          }
 
          div{

@@ -1,0 +1,257 @@
+.footer{
+   background-color: $blue-marine;
+   display: flex;
+   justify-content: center;
+
+   footer{
+      > object{
+         display: block;
+         margin: 0 auto;
+         padding: 2rem 0;
+      }
+   }
+
+   header{
+      padding: 4rem;
+      display: flex;
+      gap: 3rem;
+
+      blockquote{
+         margin: auto;
+         font-family: Averta, 'Open Sans', sans-serif;
+         font-size: 1.1rem;
+         font-weight: 700;
+         color: white;
+      }
+
+      form{
+         display: flex;
+         align-items: flex-end;
+
+         .input-block{
+            display: flex;
+            flex-direction: column;
+            
+            label{
+               font-family: Averta, 'Open Sans', sans-serif;
+               font-size: .7rem;
+               font-weight: 600;
+               color: white;
+               text-transform: uppercase;
+               letter-spacing: .15rem;
+               
+            }
+
+            input{
+               background-color: transparent;
+               border: 1px solid white;
+               color: white;
+               padding: .7rem 1rem;
+               font-family: Averta, 'Open Sans', sans-serif;
+               font-size: .7rem;
+               font-weight: 400;
+               min-width: 200px;
+            }
+         }
+
+         .input-block + .input-block{
+            margin-left: 2rem;
+         }
+
+         #btn-enviar-novidades{
+            margin-left: 2rem;
+            background-color: white;
+            color: $blue-marine;
+            font-family: Averta, 'Open Sans', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: .15rem;
+            text-transform: uppercase;
+            padding: 0 2rem;  
+            border: none;
+            border-radius: 120px;
+            height: 40px;
+         }
+      }
+   }
+
+   .wrapper{
+      width: 100vw;
+
+      .content{
+         margin: 0 auto;
+         padding: 3rem 0;
+         display: flex;
+
+         .menu{
+            object{
+               width: 190px;
+            }
+
+            p{
+               font-family: Averta, 'Open Sans', sans-serif;
+               font-size: .8rem;
+               font-weight: 400;
+               color: white;
+            }
+
+            ul{
+               list-style-type: none;
+
+               li{
+                  margin-top: 1rem;
+
+                  .footer-menu{
+                     font-family: Averta, 'Open Sans', sans-serif;
+                     font-size: .8rem;
+                     font-weight: 400;
+                     color: $primary-lighten;
+                     text-decoration: underline;
+                  }
+               }
+            }
+
+            blockquote{
+               margin-top: 2rem;
+               font-family: Averta, 'Open Sans', sans-serif;
+               font-size: .8rem;
+               font-weight: 400;
+               color: #8AA6D5;
+            }
+         }
+
+         .contato{
+            margin-left: 1rem;
+            
+            .tipos{
+               h4{
+                  text-transform: uppercase;
+                  letter-spacing: .15rem;
+                  color: white;
+                  font-weight: 700;
+                  font-size: .9rem;
+                  font-family: Averta, 'Open Sans', sans-serif;
+                  margin-bottom: 2rem;
+               }
+
+               div{
+                  display: flex;
+                  gap: 1rem;       
+
+                  object{
+                     width: 20px;
+                     height: 20px;
+                  }
+
+                  div{
+                     display: block;
+
+                     p{
+                        color: $primary-lighten;
+                        font-family: 'PT Sans', 'Open Sans', sans-serif;
+                        font-size: 1rem;
+                        font-weight: 400;
+                     }
+                  }
+               }
+
+               a{
+                  color: $primary-lighten;
+                  font-family: 'PT Sans', 'Open Sans', sans-serif;
+                  font-size: 1rem;
+                  font-weight: 400;
+                  text-decoration: underline;
+               }
+            }
+
+            .c-sobre{
+               margin-top: 2rem;
+               border: 1px solid $primary-lighten;
+               padding: 2rem;
+
+               h4{
+                  color: white;
+                  font-family: Averta, 'Open Sans', sans-serif;
+                  font-size: 1.1rem;
+                  font-weight: 700;
+               }
+
+               p{
+                  font-family: 'PT Sans', 'Open Sans', sans-serif;
+                  font-size: 1.1rem;
+                  font-weight: 700;
+                  color: #8AA6D5;
+                  margin-top: 1rem;
+                  margin-bottom: 2rem;
+               }
+
+               a{
+                  text-decoration: none;
+                  padding: .7rem 1.5rem;
+                  background-color: $primary-lighten;
+                  color: $blue-footer;
+                  font-family: Averta, 'Open Sans', sans-serif;
+                  font-size: .9rem;
+                  font-weight: 700;
+                  border-radius: 120px;
+               }
+            }
+         }
+
+         .divulgacao{
+            margin-left: 1rem;
+
+            h4{
+               letter-spacing: .15rem;
+               color: white;
+               font-weight: 700;
+               font-size: .9rem;
+               font-family: Averta, 'Open Sans', sans-serif;
+               text-transform: uppercase;
+            }
+
+            > div + div{
+               margin-top: 2rem;
+            }
+
+            .social, .pagamento{   
+               display: flex;
+               flex-direction: column;
+               gap: 1rem;
+
+               div{
+                  display: flex;
+                  gap: 1rem;
+               }
+            }
+
+            .sustentabilidade{
+               margin-top: 3rem;
+               display: block;
+               
+               > .row{
+                  margin-top:1rem;
+               }
+
+               .col{
+                  flex-grow: 0;
+               }
+
+               figure{
+                  width: 125px;
+                  height: 70px;
+                  background-color: white;
+                  border-radius: .2rem;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+               }
+            }
+         }
+      }
+
+      background-color: $blue-footer;
+   }
+
+   
+}
