@@ -3,7 +3,8 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
    <link rel="stylesheet" href="./css/main.css">
 
    <script src="./js/main.js" defer></script>
@@ -36,19 +37,19 @@
          </nav>
 
          <header class="slogan">
-            <div class="content">
-               <h1 class="phrase">Nascemos de um sonho, para fazer a diferença no mundo</h1>
-               <h4 class="invite">Descubra como tudo começou e entenda por que a Logo Ipsum faz a diferença no mundo. Há muitos sabores para se deliciar.</h4>
-               <button class="btn-about">
+            <div class="slogan__content container">
+               <h1 class="phrase row">Nascemos de um sonho, para fazer a diferença no mundo</h1>
+               <h4 class="invite row">Descubra como tudo começou e entenda por que a Logo Ipsum faz a diferença no mundo. Há muitos sabores para se deliciar.</h4>
+               <button class="btn-about row">
                   <object data="./img/icons/013-forwards.svg" type="image/svg+xml" class="icon-forwards"></object>
                   Conheça a Logo Ipsum
                </button>
             </div>
          </header> 
       </section>
-      <section id="main-content">
-         <div class="projects">
-            <div class="projects__item">
+      <section id="main-content" class="container">
+         <div class="projects row">
+            <div class="projects__item col">
                <figure>
                   <div class="desc">
                      <div class="icon-bg">
@@ -62,7 +63,7 @@
                   
                </figure>
             </div>
-            <div class="projects__item">
+            <div class="projects__item col">
                <figure>
                   <div class="desc">
                      <div class="icon-bg">
@@ -76,7 +77,7 @@
                   
                </figure>
             </div>
-            <div class="projects__item">
+            <div class="projects__item col">
                <figure>
                   <div class="desc">
                      <div class="icon-bg">
@@ -91,7 +92,132 @@
                </figure>
             </div>
          </div>
-         <main></main>
+         <main>
+            <section class="athlete">
+               <div class="athlete__text">
+                  <h2>Energia que nutre o esporte.</h2>
+                  <p>Quando você coloca suas granolas e alimentos favoritos na sacola, tenha certeza de que o seu pedido está ajudando a fazer acontecer algum projeto no esporte.
+                  </p>
+                  <p>Nos nossos mais de 20 anos de história, apoiamos grupos esportivos e atletas de várias modalidades: triathlon, mountain bike, ciclismo, corrida, jiu-jitsu, canoagem, stand up paddle, judô e corrida de aventura, por exemplo.
+                  </p>
+                  <p>É assim que a Logo Ipsum nutre o esporte com toda a energia que ele merece. Fazemos questão de estar presentes sempre. E lembre-se: você é parte importante dessa saudável relação.</p>
+                  <a href="#athlete">Saiba Mais</a>
+               </div>  
+               <div class="athlete__image">
+                  <button>
+                     <object data="./img/icons/015-play.svg" type="image/svg+xml"></object>
+                  </button>
+                  <figure>
+                     <object data="./img/typo.svg" type="image/svg+xml" class="typo"></object>
+                     <img src="./img/004-atletas.png" alt="Atletas" />
+                  </figure>
+               </div>
+            </section>
+            <section class="taste">
+               <div class="taste__image">
+                  <figure>
+                     <img src="./img/005-fundo.png" alt="Fundo" class="fruits-bg">
+                     <img src="./img/005-ellipse_1.png" alt="Elipse" class="ellipse-1">
+                     <img src="./img/005-ellipse_2.png" alt="Elipse" class="ellipse-2">
+                     <img src="./img/005-folhas_1.png" alt="Folhas 1" class="leafs-1"/>
+                     <img src="./img/005-folhas_2.png" alt="Folhas 2" class="leafs-2" />
+                     <img src="./img/005-produto.png" alt="Produto" clas="product" />
+                  </figure>
+               </div>
+               <div class="taste__text">
+                  <h2>Precisa do sabor de alimentos naturais feitos com amor?</h2>
+                  <p>Alimentos naturais feitos com carinho, sabor e qualidade. Tudo para dar a energia que você precisa para o seu dia.</p>
+                  <a href="#comprar">Comprar Agora</a>
+               </div>
+            </section>
+            <section class="follow">
+               <div class="follow__text">
+                  <h2>É a sua vez de fazer bem + feliz!</h2>
+                  <p>Os melhores sabores se misturam em várias publicações imperdíveis. Já conferiu? Fique por dentro de tudo que fazemos: acompanhe projetos que apoiamos, dicas, receitas e muito mais!</p>
+                  <a href="#acompanhar">Fique Ligado</a>
+               </div>
+               <div class="follow__slider">
+                  <input type="radio" name="radio" id="rdb-slide-1" checked>
+                  <input type="radio" name="radio" id="rdb-slide-2">
+
+                  <section id="slider-1">
+                     
+                     <div class="slider-card">
+                        <figure>
+                           <img src="./img/006-alimentos.png" alt="Alimentos Funcionais">
+                        </figure>
+                        <div class="card-content">
+                           <h3>Alimentos funcionais: três opções para incluir na dieta</h3>
+                           <blockquote>A busca pela boa alimentação é importante como um sinônimo de saúde.</blockquote>
+                           <a href="#">Continuar lendo</a>
+                        </div>
+                     </div>
+                     <div class="slider-card">
+                        <figure>
+                           <img src="./img/007-alfabetizacao.png" alt="Projeto de Alfabetização">
+                        </figure>
+                        <div class="card-content">
+                           <h3>Projeto de Alfabetização da Logo Ipsum na Fazenda Alegria</h3>
+                           <blockquote>É com esse pensamento e engajados no espírito de transformação...</blockquote>
+                           <a href="#">Continuar lendo</a>
+                        </div>
+                     </div>
+                     <div class="slider-card">
+                        <figure>
+                           <img src="./img/008-pasta.png" alt="Pasta de Amendoim">
+                        </figure>
+                        <div class="card-content">
+                           <h3>Pasta de Amendoim: Origem e Benefícios</h3>
+                           <blockquote>Relembrando os doces de Festa Junina, as pastas de amendoim têm feito...</blockquote>
+                           <a href="#">Continuar lendo</a>
+                        </div>
+                     </div>
+
+                     <label for="rdb-slide-2" class="slide-forward">
+                        <object data="./img/icons/013-forwards.svg" type="image/svg+xml"></object>
+                     </label>
+                  </section>
+
+                  <section id="slider-2">
+                     <label for="rdb-slide-1" class="slide-backward">
+                        <object data="./img/icons/012-back.svg" type="image/svg+xml"></object>
+                     </label>
+
+                     <div class="slider-card">
+                        <figure>
+                           <img src="./img/006-alimentos.png" alt="Alimentos Funcionais">
+                        </figure>
+                        <div class="card-content">
+                           <h3>Alimentos funcionais: três opções para incluir na dieta</h3>
+                           <blockquote>A busca pela boa alimentação é importante como um sinônimo de saúde.</blockquote>
+                           <a href="#">Continuar lendo</a>
+                        </div>
+                     </div>
+                     <div class="slider-card">
+                        <figure>
+                           <img src="./img/007-alfabetizacao.png" alt="Projeto de Alfabetização">
+                        </figure>
+                        <div class="card-content">
+                           <h3>Projeto de Alfabetização da Logo Ipsum na Fazenda Alegria</h3>
+                           <blockquote>É com esse pensamento e engajados no espírito de transformação...</blockquote>
+                           <a href="#">Continuar lendo</a>
+                        </div>
+                     </div>
+                     <div class="slider-card">
+                        <figure>
+                           <img src="./img/008-pasta.png" alt="Pasta de Amendoim">
+                        </figure>
+                        <div class="card-content">
+                           <h3>Pasta de Amendoim: Origem e Benefícios</h3>
+                           <blockquote>Relembrando os doces de Festa Junina, as pastas de amendoim têm feito...</blockquote>
+                           <a href="#">Continuar lendo</a>
+                        </div>
+                     </div>
+                  </section>
+               </div>
+            </section>
+
+         </main>
       </section>
    </div>
 </body>
