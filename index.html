@@ -13,7 +13,7 @@
 </head>
 <body>
    <div id="app">
-      <section id="hero">
+      <section class="hero">
          <nav class="nav">
             <object data="./img/logo.svg" type="image/svg+xml" class="logo"></object>
             <ul class="nav-list">
@@ -47,7 +47,7 @@
             </div>
          </header> 
       </section>
-      <section id="main-content" class="container">
+      <section class="main-content container">
          <div class="projects row">
             <div class="projects__item col">
                <figure>
@@ -137,10 +137,10 @@
                   <a href="#acompanhar">Fique Ligado</a>
                </div>
                <div class="follow__slider">
-                  <input type="radio" name="radio" id="rdb-slide-1" checked>
-                  <input type="radio" name="radio" id="rdb-slide-2">
+                  <input type="radio" name="radio-follow" id="rdb-slide-1" checked>
+                  <input type="radio" name="radio-follow" id="rdb-slide-2">
 
-                  <section id="slider-1">
+                  <section class="slider-1">
                      
                      <div class="slider-card">
                         <figure>
@@ -178,7 +178,7 @@
                      </label>
                   </section>
 
-                  <section id="slider-2">
+                  <section class="slider-2">
                      <label for="rdb-slide-1" class="slide-backward">
                         <object data="./img/icons/012-back.svg" type="image/svg+xml"></object>
                      </label>
@@ -216,8 +216,156 @@
                   </section>
                </div>
             </section>
+            <section class="share">
+               <div class="share__text">
+                  <figure>
+                     <img src="./img/009-elementos.png" alt="Elementos" />
+                  </figure>
+                  <object data="./img/icons/010-instagram.svg" type="image/svg+xml"></object>
+                  <h2>O que faz bem mais feliz é feito pra compartilhar.</h2>
+                  <blockquote>#logoipsum</blockquote>
+               </div>
+               <div class="share__image">
+                  <figure>
+                     <img src="./img/009-cereal.png" alt="Cereal" />
+                  </figure>
+                  <figure>
+                     <img src="./img/010-produto.png" alt="Produto" />
+                  </figure>
+                  <figure>
+                     <img src="./img/011-produto.png" alt="Produto" />
+                  </figure>
+               </div>
+            </section>
+            <section class="sport">
+               <div class="sport__text">
+                  <h2>Logo Ipsum transforma o esporte.</h2>
+                  <p>Ao longo da nossa história, apoiamos atletas e grupos esportivos de diversas modalidades. Queremos estar presentes sempre.</p>
+               </div>
+               <div class="sport__slider">
+                  <input type="radio" name="radio-sport" id="rdb-menu-sport-1" checked />
+                  <input type="radio" name="radio-sport" id="rdb-menu-sport-2" />
+                  <input type="radio" name="radio-sport" id="rdb-menu-sport-3" />
+                  
+                  <input type="radio" name="radio-sport-slide" id="rdb-sport-slide-1" checked />
+                  <input type="radio" name="radio-sport-slide" id="rdb-sport-slide-2" />
 
+                  <div class="sport-menu">
+                     <label for="rdb-menu-sport-1">
+                        <object data="./img/icons/004-athlete.svg" type="image/svg+xml"></object>
+                        Atletas
+                     </label>
+                     <label for="rdb-menu-sport-2">
+                        <object data="./img/icons/005-teams.svg" type="image/svg+xml"></object>
+                        Equipes
+                     </label>
+                     <label for="rdb-menu-sport-3">
+                        <object data="./img/icons/006-handshake.svg" type="image/svg+xml"></object>
+                        Parceiros
+                     </label>
+                  </div>
+
+                  <div class="sliders">
+                     <section id="slider-sport-1">
+                        <label for="rdb-sport-slide-2" class="slide-backward">
+                           <object data="./img/icons/012-back.svg" type="image/svg+xml"></object>
+                        </label>
+   
+                        <div class="slider-card">
+                           <figure>
+                              <img src="./img/012-atleta_1.png" alt="José Batista">
+                              <figcaption>José Batista</figcaption>
+                           </figure>
+                           <h4>Atletismo</h4>
+                        </div>
+                        <div class="slider-card">
+                           <figure>
+                              <img src="./img/013-atleta_2.png" alt="José Batista">
+                              <figcaption>Kleber Amaral</figcaption>
+                           </figure>
+                           <h4>Atletismo</h4>
+                        </div>
+                        <div class="slider-card">
+                           <figure>
+                              <img src="./img/014-atleta_3.png" alt="José Batista">
+                              <figcaption>Issac Ferraz</figcaption>
+                           </figure>
+                           <h4>Trail Running</h4>
+                        </div>
+                        <div class="slider-card">
+                           <figure>
+                              <img src="./img/015-atleta_4.png" alt="José Batista">
+                              <figcaption>Jucelino Oliveira</figcaption>
+                           </figure>
+                           <h4>Atletismo</h4>
+                        </div>
+   
+                        <label for="rdb-sport-slide-2" class="slide-forward">
+                           <object data="./img/icons/013-forwards.svg" type="image/svg+xml"></object>
+                        </label>
+                     </section>
+   
+                     <section id="slider-sport-2">
+                        <label for="rdb-sport-slide-1" class="slide-backward">
+                           <object data="./img/icons/012-back.svg" type="image/svg+xml"></object>
+                        </label>
+   
+                        <div class="slider-card">
+                           <figure>
+                              <img src="./img/012-atleta_1.png" alt="José Batista">
+                              <figcaption>José Batista</figcaption>
+                           </figure>
+                           <h4>Atletismo</h4>
+                        </div>
+                        <div class="slider-card">
+                           <figure>
+                              <img src="./img/013-atleta_2.png" alt="José Batista">
+                              <figcaption>Kleber Amaral</figcaption>
+                           </figure>
+                           <h4>Atletismo</h4>
+                        </div>
+                        <div class="slider-card">
+                           <figure>
+                              <img src="./img/014-atleta_3.png" alt="José Batista">
+                              <figcaption>Issac Ferraz</figcaption>
+                           </figure>
+                           <h4>Trail Running</h4>
+                        </div>
+                        <div class="slider-card">
+                           <figure>
+                              <img src="./img/015-atleta_4.png" alt="José Batista">
+                              <figcaption>Jucelino Oliveira</figcaption>
+                           </figure>
+                           <h4>Atletismo</h4>
+                        </div>
+   
+                        <label for="rdb-sport-slide-1" class="slide-forward">
+                           <object data="./img/icons/013-forwards.svg" type="image/svg+xml"></object>
+                        </label>
+                     </section>
+                  </div>
+               </div>
+            </section>
          </main>
+      </section>
+      <section class="partner container">
+         <div class="partner__text">
+            <h2>Seja nosso parceiro</h2>
+            <p>Produtos saudáveis com o melhor sabor: Felicidade. Além de deixarem seus clientes felizes, os sabores da Logo Ipsum têm tudo para te ajudar a vender mais.</p>
+            <a href="#revendedor">Quero Revender</a>
+         </div>
+         <div class="partner__image">
+            <figure>
+               <img src="./img/016-elementos.png" alt="Elementos" class="elements"/>
+               <div>Faça Parte</div>
+               <img src="./img/016-pessoa.png" alt="Pessoa" />
+            </figure>
+         </div>
+      </section>
+      <section class="footer">
+         <footer>
+
+         </footer>
       </section>
    </div>
 </body>

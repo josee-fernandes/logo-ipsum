@@ -1,4 +1,4 @@
-#main-content{
+.main-content{
    width: 70%;
    max-width: 1245px;
    margin: 0 auto;
@@ -244,7 +244,6 @@
          margin-top: 7rem;
          position: relative;
          display: flex;
-         // justify-content: spac;
          align-items: center;
 
          &__text{
@@ -301,7 +300,6 @@
             section{
                position: relative;
                display: flex;
-               // justify-content: center;
                align-items: center;
                gap: 2rem;
                transition: all .5s ease;
@@ -309,9 +307,10 @@
                &::after{
                   content: '';
                   display: block;
-                  width: 100%;
+                  right: 0;
+                  width: 15%;
                   height: 100%;
-                  background-image: linear-gradient(to left, $light, transparent 30%);
+                  background-image: linear-gradient(to left, $light, transparent 90%);
                   position: absolute;
                }
 
@@ -385,6 +384,233 @@
 
             #rdb-slide-2:checked ~ #slider-1{
                margin-left: -951px;
+            }
+         }
+      }
+
+      .share{
+         margin-top: 7rem;
+         position: relative;
+         display: flex;
+         // justify-content: center;
+         align-items: center;
+
+         &__text{
+            width: 80%;
+            max-width: 500px;
+            padding: 4rem;
+            padding-right: 8rem;
+
+            figure{
+               
+               img{
+                  position: absolute;
+                  left: -200px;
+               }
+            }
+
+            object{
+               width: 40px;
+               height: 40px;
+               filter: invert(30%) sepia(50%) saturate(3000%) hue-rotate(170deg) brightness(60%) contrast(100%);
+            }
+
+            h2{
+               font-family: Averta, 'Open Sans', sans-serif;
+               font-size: 2.1rem;
+               font-weight: 700;
+               color: $violet;
+               max-width: 450px;
+            }
+   
+            blockquote{
+               margin-top: 2rem;
+               margin-bottom: 3rem;
+               font-family: Averta, 'Open Sans', sans-serif;
+               font-size: 1.1rem;
+               font-weight: 700;
+               color: $pink;
+               max-width: 400px;
+            }
+         }
+
+         &__image{
+            position: absolute;
+            right: -200px;
+            display: flex;
+            gap: 2rem;
+
+            figure{
+               max-width: 285px;
+               max-height: 285px;
+            }
+         }
+      }
+
+      .sport{
+         margin-top: 7rem;
+         position: relative;
+
+         &__text{
+            
+            h2{
+               margin: 0 auto;
+               font-family: Averta, 'Open Sans', sans-serif;
+               font-size: 2.4rem;
+               font-weight: 700;
+               color: $green;
+               max-width: 440px;
+               text-align: center;
+            }
+
+            p{
+               margin: 0 auto;
+               margin-top: 2rem;
+               margin-bottom: 3rem;
+               font-family: 'PT Sans', 'Open Sans', sans-serif;
+               font-size: 1rem;
+               font-weight: 400;
+               color: $light-text;
+               max-width: 680px;
+               text-align: center;
+            }
+         }
+
+         &__slider{
+            overflow: hidden;
+
+            #rdb-menu-sport-1, #rdb-menu-sport-2, #rdb-menu-sport-3,
+            #rdb-sport-slide-1, #rdb-sport-slide-2{
+               visibility: hidden;
+               position: absolute;
+            }
+
+            #rdb-menu-sport-1:checked ~ .sport-menu label:nth-child(1){
+               background-color: $green;
+               color: white;
+               box-shadow: 0 3px 10px 0 rgba($green, .7);
+
+               object{
+                  filter: grayscale(100%) brightness(100000%) contrast(100%);
+               }
+            }
+
+            #rdb-menu-sport-2:checked ~ .sport-menu label:nth-child(2){
+               background-color: $green;
+               color: white;
+               box-shadow: 0 3px 10px 0 rgba($green, .7);
+
+               object{
+                  filter: grayscale(100%) brightness(100000%) contrast(100%);
+               }
+            }
+
+            #rdb-menu-sport-3:checked ~ .sport-menu label:nth-child(3){
+               background-color: $green;
+               color: white;
+               box-shadow: 0 3px 10px 0 rgba($green, .7);
+
+               object{
+                  filter: grayscale(100%) brightness(100000%) contrast(100%);
+               }
+            }
+
+            #rdb-sport-slide-1:checked ~ #slider-sport-1{
+               margin-left: 0;
+            }
+
+            #rdb-sport-slide-2:checked ~ #slider-sport-1{
+               margin-left: -1220px;
+            }
+
+            .sport-menu{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               gap: 2rem;
+
+               label{
+                  border: 1px solid $green;
+                  border-radius: 120px;
+                  padding: .5rem 1.5rem;
+                  font-family: Averta, 'Open Sans', sans-serif;
+                  font-weight: 700;
+                  font-size: .9rem;
+                  letter-spacing: .15rem;
+                  text-transform: uppercase;
+                  color: $green;
+                  transition: all .2s ease;
+                  max-width: 200px;
+
+                  object{
+                     margin: auto;
+                     height: 15px;
+                     transition: all .1s ease;
+                  }
+               }
+            }
+
+            .sliders{
+               display: flex;
+            }
+
+            section{
+               margin-top: 2rem;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               gap: 2rem;
+               transition: all .5s ease;
+
+               .slider-card{
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+
+                  figure{
+                     max-width: 280px;
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: center;
+                     align-items: center;
+
+                     figcaption{
+                        margin-top: 1rem;
+                        font-family: Averta, 'Open Sans', sans-serif;
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                        color: $green;
+                     }
+                  }
+
+                  h4{
+                     font-family: 'PT Sans', 'Open Sans', sans-serif;
+                     font-size: .9rem;
+                     font-weight: 400;
+                     color: $light-text
+                  }
+               }
+
+               .slide-forward, .slide-backward{
+                  width: 50px;
+                  height: 50px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  border-radius: 50%;
+                  background-color: $green;
+                  z-index: 2;
+                  cursor: pointer;
+               }
+
+               .slide-forward{
+                  margin-left: -80px;
+               }
+
+               .slide-backward{
+                  margin-right: -80px;
+               }
             }
          }
       }

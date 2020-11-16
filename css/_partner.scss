@@ -1,0 +1,72 @@
+.partner{
+   margin-top: 7rem;
+   position: relative;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+   &__text{
+      padding: 4rem;
+      z-index: 2;
+
+      h2{
+         font-family: Averta, 'Open Sans', sans-serif;
+         font-size: 2.4rem;
+         font-weight: 700;
+         color: $orange;
+         max-width: 450px;
+      }
+
+      p{
+         margin-top: 2rem;
+         margin-bottom: 3rem;
+         font-family: 'PT Sans', 'Open Sans', sans-serif;
+         font-size: 1rem;
+         font-weight: 400;
+         color: $light-text;
+         max-width: 400px;
+      }
+
+      a{
+         font-family: Averta, 'Open Sans', sans-serif;
+         font-size: .7rem;
+         font-weight: 700;
+         padding: .7rem 1.2rem;
+         letter-spacing: .15rem;
+         text-transform: uppercase;
+         color: white;
+         background-color: $orange;
+         border-radius: 120px;
+         text-decoration: none;
+         transition: all .3s ease;
+
+         &:hover{
+            opacity: .7;
+         }
+      }
+   }
+
+   &__image{
+      figure{
+         position: relative;
+
+         .elements{
+            position: absolute;
+            margin-left: -50px;
+            z-index: -2;
+         }
+
+         div{
+            width: max-content;
+            position: absolute;
+            color: $orange;
+            font-family: Averta, 'Open Sans', sans-serif;
+            font-size: 7rem;
+            font-weight: 700;
+            z-index: 3;
+            margin-left: -70px;
+            margin-top: 150px;
+         }
+      }
+   }
+}
